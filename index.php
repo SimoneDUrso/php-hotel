@@ -57,9 +57,15 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                
-            </div>
+            <?php foreach($hotels as $hotel){ ?>
+                <div class="col-3 g-5">
+                        <h2><strong> <?php echo $hotel['name'] ?> </strong></h2>
+                        <p><strong>Descrizione:</strong> <?php echo $hotel['description'] ?> </p>
+                        <p><strong>Parcheggio:</strong> <?php echo $hotel['parking'] ?> </p>
+                        <p><strong>Voto utenti:</strong> <?php echo $hotel['vote'] ?> </p>
+                        <p><strong>Distanza dal centro:</strong> <?php echo $hotel['distance_to_center'] ?> </p>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </body>
