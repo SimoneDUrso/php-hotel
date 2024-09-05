@@ -39,6 +39,10 @@
 
     foreach($hotels as $hotel){
         var_dump($hotel['name']);
+        foreach($hotel as $key => $value){
+            var_dump($key." => ".$value);
+        }
+        echo "-----------------------------------------------------";
     }
 ?>
 
